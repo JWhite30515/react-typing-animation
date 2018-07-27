@@ -18,7 +18,7 @@ class Typing extends Component {
   componentWillReceiveProps({ children }) {
     if (
       children !== undefined &&
-      JSON.stringify(children) !== JSON.stringify(this.props.children)
+      JSON.stringify(util.inspect(children)) !== JSON.stringify(util.inspect(this.props.children))
     ) {
       this.resetState();
     }
