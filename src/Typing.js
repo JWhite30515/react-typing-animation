@@ -8,7 +8,7 @@ import Reset from './Reset';
 import Delay from './Delay';
 import Speed from './Speed';
 import Cursor from './Cursor';
-
+var util = require('util');
 class Typing extends Component {
   state = {
     isFinished: false,
